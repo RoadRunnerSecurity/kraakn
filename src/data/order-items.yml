@@ -1,0 +1,44 @@
+- order-item:
+    product-name: Latitude 14 5000 Series
+    order-number: 820384365
+    quantity: 1
+    unit-price: $1,042.11
+    status: Confirmed
+    shipping-selection: Faster - $15.00
+    carrier-tracking: Available when shipped
+    post-ship-carrier-tracking: View Order Details
+    build-complete: true
+    first-shipped: false
+- order-item:
+    product-name: Targus Drifter II Backpack
+    order-number: 820384364
+    quantity: 1
+    unit-price: $59.99
+    status: Confirmed
+    shipping-selection: Free Standard Shipping
+    carrier-tracking: Available when shipped
+    post-ship-carrier-tracking: USPS 05258758203
+    build-complete: false
+    first-shipped: true
+- order-item:
+    product-name: Venue 10 5000 Series
+    order-number: 820384366
+    quantity: 1
+    unit-price: $388.99
+    status: Confirmed
+    shipping-selection: Faster - $15.00
+    carrier-tracking: Available when shipped
+    post-ship-carrier-tracking: View Order Details
+    build-complete: false
+    first-shipped: true
+- order-item:
+    product-name: Dell Wireless Mouse - WM324
+    order-number: 820384367
+    quantity: 1
+    unit-price: $29.99
+    status: Confirmed
+    shipping-selection: Free Standard Shipping
+    carrier-tracking: Available when shipped
+    post-ship-carrier-tracking: USPS 05258758203
+    build-complete: false
+    first-shipped: true

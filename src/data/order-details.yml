@@ -1,0 +1,16 @@
+- order-detail:
+    templateId: omega-confirmation
+    headline: Items in your order (4)
+- order-detail:
+    templateId: omega-partial-ship
+    headline: Shipment 1 of 2
+- order-detail:
+    templateId: omega-final-ship
+    headline: Shipment 2 of 2
+- order-detail:
+    templateId: omega-single-ship
+    headline: Shipment 1 of 1
+- order-detail:
+    templateId: omega-build-complete
+    headline: Your custom-built products (1)
+    headline2: Other ordered products (3)

@@ -1,0 +1,25 @@
+<container class="{{page}}">
+  
+  {{> order-hero }}
+  
+  {{> order-summary}}
+  
+  {{> order-details }}
+  
+  {{#each order-items}}
+    {{> order-item}}
+  {{/each}}
+  
+  {{> order-totals}}
+  
+  {{> billing-shipping-details}}
+  
+  {{> recommended-products}}
+  
+  {{> support}}
+  
+  {{> social-connect}}
+  
+  {{> footer}}
+
+</container>

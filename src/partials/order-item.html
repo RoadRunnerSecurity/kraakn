@@ -1,0 +1,75 @@
+<row class="order-item-header collapse">
+  <columns small="12" large="12">
+    <callout class="light-gray">
+      <p>
+        <strong>{{order-item.product-name}}</strong><br /> <small>Order Number:</small> <a href="#">{{order-item.order-number}}</a>
+      </p>
+    </callout>
+  </columns>
+</row>
+<row class="order-item-body">
+  <columns small="6" large="4">
+    <small>
+        Unit Price
+      </small>
+    <p>
+      {{order-item.unit-price}}
+    </p>
+  </columns>
+  <columns small="6" large="4">
+    <small>Quantity</small>
+    <p>
+      {{order-item.quantity}}
+    </p>
+  </columns>
+  <columns small="4" large="4">
+    <small>Total</small>
+    <p>
+      {{order-item.unit-price}}
+    </p>
+  </columns>
+</row>
+<row class="order-item-body last">
+  <columns small="6" large="4">
+    {{#ifpage 'omega-confirmation' 'omega-build-complete'}}
+    <small>
+        Status
+      </small>
+    <p>
+      {{order-item.status}}
+    </p>
+    {{/ifpage}} {{#unlesspage 'omega-confirmation' 'omega-build-complete'}}
+    <small>
+        Shipping Method
+      </small>
+    <p>
+      {{order-item.shipping-selection}}
+    </p>
+    {{/unlesspage}}
+  </columns>
+  <columns small="4" large="4">
+    {{#ifpage 'omega-confirmation' 'omega-build-complete'}}
+    <small>Shipping Method</small>
+    <p>
+      {{order-item.shipping-selection}}
+    </p>
+    {{/ifpage}} {{#unlesspage 'omega-confirmation' 'omega-build-complete'}}
+    <small>Carrier &amp; Tracking</small>
+    <p>
+      <a href="#">{{order-item.post-ship-carrier-tracking}}</a>
+    </p>
+    {{/unlesspage}}
+  </columns>
+  <columns small="6" large="4">
+    <span style="visibility:hidden;">     
+        <small></small>
+    <p>
+    </p>
+      </span>
+  </columns>
+</row>
+<row>
+  <columns small="12" large="12">
+    <hr /> &nbsp;
+  </columns>
+</row>

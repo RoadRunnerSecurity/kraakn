@@ -1,0 +1,10 @@
+<row>
+  <columns small="12" large="12">
+    <h3>
+        {{#each order-details}}
+          {{template-selector data=order-detail output='headline'}}
+        {{/each}}
+      </h3>
+    <hr />
+  </columns>
+</row>

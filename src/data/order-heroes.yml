@@ -1,0 +1,20 @@
+- order-hero:
+    templateId: omega-confirmation
+    headline: Thanks for your order!
+    body: We've received your order and we'll be processing your items soon. If you would like to review your order, the details are below.
+- order-hero:
+    templateId: omega-partial-ship
+    headline: A shipment is on its way!
+    body: Items from your order have shipped, and you can view carrier and tracking information below. We'll let you know as more items ship. Thanks for shopping with Dell!
+- order-hero:
+    templateId: omega-final-ship
+    headline: Your last shipment is on its way!
+    body: We hope you've been enjoying your new Dell purchases. The last items from your order have shipped, and you can view carrier and tracking information below. Thanks for shopping with Dell!
+- order-hero:
+    templateId: omega-single-ship
+    headline: Your shipment is on its way!
+    body: Your order has shipped, and you can view carrier and tracking information below. Thanks for shopping with Dell!
+- order-hero:
+    templateId: omega-build-complete
+    headline: Your order is ready!
+    body: Your custom-built product is complete and has left our factory. We'll send an update with tracking info as soon as the local carrier picks up your package.

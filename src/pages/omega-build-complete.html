@@ -1,0 +1,40 @@
+<container class="{{page}}">
+  
+  {{> order-hero }}
+  
+  {{> order-summary}}
+  
+  {{> order-details }}
+  
+  {{#each order-items}}  
+    {{#if order-item.build-complete}}
+      {{> order-item}}
+    {{/if}}
+  {{/each}}
+  <row>
+  <columns small="12" large="12">
+    <h3>
+        Other ordered products (3)
+      </h3>
+    <hr />
+  </columns>
+</row>
+  {{#each order-items}}  
+    {{#unless order-item.build-complete}}
+      {{> order-item}}
+    {{/unless}}
+  {{/each}}
+  
+  {{> order-totals}}
+  
+  {{> billing-shipping-details}}
+  
+  {{> recommended-products}}
+  
+  {{> support}}
+  
+  {{> social-connect}}
+  
+  {{> footer}}
+
+</container>
