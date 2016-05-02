@@ -1,5 +1,6 @@
 import gulp     from 'gulp';
 import plugins  from 'gulp-load-plugins';
+import gutil    from 'gulp-util';
 import browser  from 'browser-sync';
 import rimraf   from 'rimraf';
 import panini   from 'panini';
@@ -13,6 +14,7 @@ import merge    from 'merge-stream';
 import beep     from 'beepbeep';
 import colors   from 'colors';
 import email    from 'gulp-email';
+import html2json from 'html2json';
 
 const $ = plugins();
 
@@ -24,7 +26,7 @@ var CONFIG;
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build',
-  gulp.series(clean, pages, sass, images, inline));
+  gulp.series(clean, pages, sass, images, inline, createXSLT));
 
 // Build emails, run the server, and watch for file changes
 gulp.task('default',
@@ -42,6 +44,11 @@ gulp.task('zip',
 // This happens every time a build starts
 function clean(done) {
   rimraf('dist', done);
+}
+
+function createXSLT () {
+  gutil.log(html2json.html2json('<div>Testes</div>'));
+  return;
 }
 
 // Compile layouts, pages, and partials into flat HTML files
